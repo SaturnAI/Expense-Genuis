@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title></title>
+    <link rel="stylesheet" href="/static/css/style1.css">
+</head>
+
+<body>
+
+   <div id="wrap">
+
+
+        <div class="container">
+            <header class="header">
+                <a href="index1.html">
+                    <img src="/static/img/logo.png"  class="logo"></img>
+                </a>
+
+
+
+                <div class="navbar">
+                    <a href="/index2" onclick="redirectToIndex2()">Expense Genius </a>
+                    <a href="#">ABOUT</a>
+                </div>
+          </header>
+
+          <div class="greeting" id="hiddenGreeting">
+              <p>Strengthen Your Success With Our Solutions</p>
+          </div>
+
+
+          <div class="hero-section-subheading hero-section-heading">
+              <span class="hidden">Hello!</span> <span class="role"></span>
+          </div>
+          <img src="/static/img/3d.png" class="img">
+        </div>
+
+   </div>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+<script>
+    // Use window.onload to ensure that the Typed.js script runs after the page has fully loaded
+    window.onload = function () {
+
+        setTimeout(function () {
+            var hiddenGreeting = document.getElementById('hiddenGreeting');
+            hiddenGreeting.style.opacity = '1';
+        }, 2000);
+        setTimeout(function () {
+            document.querySelector('.hero-section-heading').classList.add('fade-in');
+        }, 1500); // Add a delay of 1.5 seconds before fading in
+
+        var typeData = new Typed(".role", {
+            strings: ["Welcome to our Portal"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1000,
+        });
+    };
+
+
+</script>
+
+   </script>
+
+
+</body>
+
+</html>
